@@ -165,6 +165,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-browserify');
 
-  grunt.registerTask('default', ['clean','copy:fonts', 'copy:images', 'copy:vendor', 'browserify:dev','exec:build_sphinx','connect','open','watch']);
+  grunt.registerTask('default', ['clean','copy:fonts', 'copy:images', 'copy:vendor', 'browserify:dev','exec:build_sphinx','connect','watch']);
   grunt.registerTask('build', ['clean','copy:fonts', 'copy:images', 'copy:vendor', 'browserify:build', 'uglify']);
 }
